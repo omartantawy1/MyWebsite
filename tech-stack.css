@@ -1,0 +1,94 @@
+/* =========================
+   Tech Stack Section
+   ========================= */
+.tech-stack {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.tech-inner {
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.tech-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.tech-subtitle {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.tech-container {
+  width: 100%;
+  max-width: 1200px;
+  height: auto; /* instead of 400px */
+  min-height: 300px; /* optional minimum */
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Floating Bubbles */
+.floating-img {
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  max-width: 30px;
+  max-height: 30px;
+  min-width: 15px;
+  min-height: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+  
+  /* Add blur effect */
+  filter: blur(2px); /* Adjust the px value to increase/decrease blur */
+  opacity: 0.8;      /* optional: makes bubbles a bit transparent */
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.tech-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-in-out;
+  justify-content: center;
+}
+
+.tech-item.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tech-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.tech-item img:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+@media (min-width: 1024px) {
+  .tech-grid { grid-template-columns: repeat(6, 1fr); }
+}

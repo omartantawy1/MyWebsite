@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Omar Ashraf</title>
+    <link rel="icon" type="image/png" href="images/me.jfif" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="tech-stack.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="experience.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="waves-bubbles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="bubbles">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+    <header class="box" role="banner">
+      <div class="group">
+        <!-- Logo + Text -->
+        <div class="logo-container">
+          <span class="logo-text">Omar Ashraf</span>
+          <img class="logo" src="images/logo.png" alt="Company Logo" />
+        </div>
+
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="nav-list">
+            <li><a href="#tech-stack">Tech Stack</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects-heading">Projects</a></li>
+            <li><a href="#footer">Contact</a></li>
+
+            <!-- New li with image -->
+            <li>
+              <a href="javascript:void(0);" id="theme-toggle">
+                <img
+                  id="theme-icon"
+                  src="images/night-mode.png"
+                  alt="Toggle Theme"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div
+          class="group-2"
+          role="complementary"
+          aria-label="Social media links"
+        >
+          <a
+            href="https://github.com/omartantawy1"
+            class="social-link"
+            aria-label="GitHub profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/github.png" alt="GitHub" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/omar-tantawy-0b53a421a/"
+            class="social-link"
+            aria-label="LinkedIn profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a
+            href="https://www.instagram.com/omartantawy_/"
+            class="social-link"
+            aria-label="Instagram profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/instagram.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="hero" id="home" role="region" aria-label="Intro">
+      <div class="hero-inner">
+        <div class="hero-avatar" aria-hidden="true">
+          <img
+            src="images/me.jfif"
+            alt="Omar Ashraf portrait"
+            class="hero-photo"
+            loading="eager"
+          />
+        </div>
+
+        <div class="hero-content">
+          <h1 class="hero-title">Hello , I'm Omar Ashraf 👨‍💻</h1>
+
+          <p class="hero-subtitle">
+            I’m a full-stack developer sharing my journey—projects, tips, and
+            lessons I’ve learned building with Angular, React, Laravel, and
+            Flutter. I love turning ideas into fast, accessible products and
+            explaining the “why” behind the code.
+          </p>
+
+          <div class="cta-group">
+            <a
+              href="#contact"
+              class="btn btn-primary"
+              aria-label="Go to contact section"
+              >Get in touch</a
+            >
+            <a
+              href="https://drive.google.com/drive/folders/1m9btzn49Z6mlxwKAt5u_IB7vkS7rz2Ov?usp=sharing"
+              class="btn btn-outline"
+              aria-label="Download CV"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="waves">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M0,49 C150,149 350,-49 600,49 C850,149 1050,-49 1200,49 L1200,120 L0,120 Z"
+          fill="#2563eb"
+          class="wave"
+        ></path>
+        <path
+          d="M0,49 C150,149 350,-49 600,49 C850,149 1050,-49 1200,49 L1200,120 L0,120 Z"
+          fill="#3b82f6"
+          class="wave"
+        ></path>
+        <path
+          d="M0,49 C150,149 350,-49 600,49 C850,149 1050,-49 1200,49 L1200,120 L0,120 Z"
+          fill="#93c5fd"
+          class="wave"
+        ></path>
+      </svg>
+    </div>
+
+    <!-- Technical Skills Part -->
+    <!-- Technical Skills Part -->
+    <!-- Technical Skills Part -->
+    <section
+      class="tech-stack"
+      id="tech-stack"
+      role="region"
+      aria-label="Tech stack"
+    >
+      <div class="tech-inner">
+        <h2 class="tech-title">My Tech Stack 💻</h2>
+
+        <p class="tech-subtitle">
+          Technologies I have been working with recently
+        </p>
+
+        <!-- First Tech grid-->
+        <!-- Tech Section with Blur Background -->
+        <div class="tech-container">
+          <!--Bubbles Floating-->
+          <img src="images/html.webp" alt="HTML5" class="floating-img" />
+          <img src="images/css.png" alt="CSS3" class="floating-img" />
+          <img src="images/javascript.png" alt="JS" class="floating-img" />
+          <img src="images/react.png" alt="React" class="floating-img" />
+          <img
+            src="images/bootstrap.png"
+            alt="Bootstrap"
+            class="floating-img"
+          />
+          <img src="images/mysql.png" alt="MySQL" class="floating-img" />
+          <img src="images/flutter.png" alt="Flutter" class="floating-img" />
+          <img
+            src="images/New_Firebase_logo.svg.png"
+            alt="Firebase"
+            class="floating-img"
+          />
+          <img src="images/python.png" alt="Python" class="floating-img" />
+          <img src="images/node_js.png" alt="Node.js" class="floating-img" />
+          <img src="images/angular.png" alt="Angular" class="floating-img" />
+          <img src="images/github.png" alt="GitHub" class="floating-img" />
+
+          <!-- First Tech Grid -->
+          <div class="tech-grid">
+            <div class="tech-item">
+              <img src="images/html.webp" alt="HTML5 logo" />
+            </div>
+            <div class="tech-item">
+              <img src="images/css.png" alt="CSS3 logo" />
+            </div>
+            <div class="tech-item">
+              <img src="images/javascript.png" alt="JavaScript logo" />
+            </div>
+            <div class="tech-item">
+              <img src="images/react.png" alt="React logo" />
+            </div>
+            <div class="tech-item">
+              <img src="images/bootstrap.png" alt="Bootstrap logo" />
+            </div>
+            <div class="tech-item">
+              <img src="images/mysql.png" alt="MySQL logo" />
+            </div>
+          </div>
+
+          <!-- Second Tech Grid -->
+          <div class="tech-grid">
+            <div class="tech-item">
+              <img src="images/flutter.png" alt="Flutter logo" />
+            </div>
+            <div class="tech-item">
+              <img src="images/New_Firebase_logo.svg.png" alt="Firebase logo" />
+            </div>
+            <div class="tech-item">
+              <img src="images/python.png" alt="Python logo" />
+            </div>
+            <div class="tech-item">
+              <img src="images/node_js.png" alt="Node.js logo" />
+            </div>
+            <div class="tech-item">
+              <img src="images/angular.png" alt="Angular logo" />
+            </div>
+            <div class="tech-item">
+              <img src="images/github.png" alt="GitHub logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Technical Skills Part End -->
+    <!-- Technical Skills Part End -->
+    <!-- Technical Skills Part End -->
+
+    <!-- Experience Part -->
+
+    <!-- Experience Part -->
+
+    <section
+      class="experience"
+      id="experience"
+      role="region"
+      aria-label="Experience"
+    >
+      <div class="experience-inner">
+        <h2 class="experience-title">My Experience</h2>
+        <p class="experience-subtitle">
+          Experience I have gained over the years
+        </p>
+
+        <div class="experience-item">
+          <div class="experience-content">
+            <h3 class="job-title">Full Stack Developer - Edutrick</h3>
+            <p class="job-description">
+              Building and maintaining web applications using Angular, React,
+              Laravel, and Flutter. Collaborating with teams to deliver scalable
+              solutions.
+            </p>
+          </div>
+          <div class="experience-dates">
+            <span>Feb 2024 – Present</span>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-content">
+            <h3 class="job-title">IT Help Desk - Cairo Financial Holding</h3>
+            <p class="job-description">
+              Provided technical support and troubleshooting for software and
+              hardware issues. Ensured smooth IT operations for the company.
+            </p>
+          </div>
+          <div class="experience-dates">
+            <span>Dec 2022 – Jun 2023</span>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-content">
+            <h3 class="job-title">Full Stack Developer Intern - ITI</h3>
+            <p class="job-description">
+              3-month intensive training program using PHP, MySQL, and Laravel.
+              Developed web projects and enhanced backend skills.
+            </p>
+          </div>
+          <div class="experience-dates">
+            <span>Jul 2023 – Nov 2023</span>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <section class="projects-section" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects 🥷🏽</h2>
+        <p class="subheading">Things I’ve built so far</p>
+
+        <div class="project-grid">
+          <article
+            class="project-card"
+            tabindex="0"
+            aria-label="Project Tile 1"
+          >
+            <img
+              class="project-image"
+              src="images/scenewave.png"
+              alt="Abstract blurred colored gradient with soft blue and pink tones"
+              onerror="this.onerror=null;this.src='https://placehold.co/320x160?text=Image+not+available';"
+            />
+            <div class="project-content">
+              <h3 class="project-title">Scenewave</h3>
+              <p class="project-description">
+                Developed a Flutter movie app with TMDB API and Firebase auth,
+                featuring categorized movies, detailed views,
+                favorites/watch-later lists, search, and advanced explore
+                filters.
+              </p>
+              <p class="project-tech">Tech stack : Dart, Flutter, Firebase</p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/omartantawy1/Scenewave"
+                  target="_blank"
+                  aria-label="View Code for Project 1"
+                  tabindex="0"
+                >
+                  <i class="fas fa-chevron-up"></i>
+                  View Code
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-header">
+        <h2 class="footer-title">Get in Touch</h2>
+        <img
+          src="images/chat.png"
+          alt="Contact Icon"
+          class="footer-title-img"
+        />
+      </div>
+      <div class="container" id="container">
+        <!-- First Contact Form -->
+        <!-- First Contact Form -->
+        <div class="form-container contact-left">
+          <form
+            id="contact-form-1"
+            action="https://formspree.io/f/mvgwrwnn"
+            method="POST"
+          >
+            <h1 class="main-title">Contact Me </h1>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Second Contact Form (alternate side when toggled) -->
+        <div class="form-container contact-right">
+          <form
+            id="contact-form-2"
+            action="https://formspree.io/f/mvgwrwnn"
+            method="POST"
+          >
+            <h1 class="main-title">Get in Touch</h1>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Toggle panels -->
+        <div class="toggle-container">
+          <div class="toggle">
+            <div class="toggle-panel toggle-left">
+              <h1>Need Help?</h1>
+              <p>Send me a message anytime!</p>
+              <button class="hidden" id="showForm1">Contact Form</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+              <h1>Hello Friend!</h1>
+              <p>I'd love to hear from you</p>
+              <button class="hidden" id="showForm2">Contact Form</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>Developed By Omar Ashraf</div>
+        <nav class="social-icons" aria-label="Social media links">
+          <a
+            href="https://www.instagram.com/omartantawy_/"
+            target="_blank"
+            class="social-icon"
+          >
+            <img
+              src="images/instagram.png"
+              alt="Instagram"
+              width="24"
+              height="24"
+            />
+          </a>
+          <a
+            href="https://github.com/omartantawy1"
+            target="_blank"
+            class="social-icon"
+          >
+            <img src="images/github.png" alt="GitHub" width="24" height="24" />
+          </a>
+          <a href="https://wa.me/" target="_blank" class="social-icon">
+            <img
+              src="images/WhatsApp.svg.png"
+              alt="WhatsApp"
+              width="24"
+              height="24"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/omar-tantawy-0b53a421a/"
+            target="_blank"
+            class="social-icon"
+          >
+            <img
+              src="images/linkedin.png"
+              alt="LinkedIn"
+              width="24"
+              height="24"
+            />
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

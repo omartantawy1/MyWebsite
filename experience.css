@@ -1,0 +1,85 @@
+/* =========================
+   Experience Section
+   ========================= */
+.experience {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.experience-inner {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.experience-title,
+.projects-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.experience-subtitle {
+  font-size: 16px;
+
+  margin-bottom: 40px;
+}
+
+.experience-item {
+  display: flex;
+  justify-content: end;
+
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 25px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-in-out;
+}
+
+.experience-item.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.experience-item:hover {
+
+  transform: translateY(-15px);
+  color: white;
+}
+
+.experience-item .experience-content,
+.experience-item .job-title,
+.experience-item .job-description,
+.experience-item .experience-dates {
+  color: inherit;
+}
+
+.experience-content {
+  max-width: 70%;
+}
+
+.job-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.job-description {
+  font-size: 15px;
+  color: #4b5563;
+}
+
+.experience-dates {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .experience-item {
+    flex-direction: column;
+  }
+  .experience-content {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}

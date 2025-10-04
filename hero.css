@@ -1,0 +1,148 @@
+/* =========================
+   Hero Section
+   ========================= */
+.hero {
+  padding: 110px 20px 60px;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .hero-inner {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 50px;
+  }
+}
+
+.hero-avatar {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.hero-avatar::after {
+  content: "";
+  inset: -6px;
+  border-radius: 50%;
+  border: 6px solid #e6edf5;
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-title {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #111827;
+  width: 0;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 8px 0 10px;
+  opacity: 1;
+  transform: translateY(0);
+  animation: typing 3s steps(20, end) 2s forwards;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  max-width: 760px;
+  margin: 0 auto 22px;
+}
+
+.cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Buttons */
+.btn {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: #111827;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(17, 24, 39, 0.18);
+}
+
+.btn-primary:hover {
+  background: #0b1220;
+}
+
+.btn-outline {
+  background: #fff;
+  color: #111827;
+  border-color: #d1d5db;
+}
+
+.btn-outline:hover {
+  background: #f3f4f6;
+  border-color: #c5cad3;
+}
+
+/* Responsive Hero */
+@media (min-width: 768px) {
+  .hero {
+    padding: 130px 20px 80px;
+  }
+  .hero-avatar {
+    width: 220px;
+    height: 220px;
+  }
+  .hero-title {
+    font-size: 34px;
+  }
+  .hero-subtitle {
+    font-size: 17px;
+  }
+}
+
+/* Hero Animations */
+@keyframes typing {
+  0% {
+    width: 0;
+    border-right: 3px solid #111827;
+  }
+  90% {
+    width: 100%;
+    border-right: 3px solid #111827;
+  }
+  100% {
+    width: 100%;
+    border-right: transparent;
+  }
+}

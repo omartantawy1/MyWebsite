@@ -1,0 +1,194 @@
+/* =========================
+   Header / Navbar
+   ========================= */
+.box {
+  position: relative;
+  width: 100%;
+  height: 70px;
+}
+
+.box .group {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 30px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+/* Navbar */
+.navbar .nav-list {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  align-items: center; /* يخلي العناصر كلها في النص */
+}
+
+/* Default (Light mode) navbar links */
+.navbar .nav-list a {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #111827; /* أسود غامق للوضع العادي */
+  text-decoration: none;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-list a:hover {
+  color: #4a90e2;
+}
+
+/* Dark mode links */
+body.dark-mode .navbar .nav-list a {
+  color: #fff; /* أبيض في الوضع الليلي */
+}
+
+body.dark-mode .navbar .nav-list a:hover {
+  color: #4a90e2; /* نفس لون الهوفر في الاتنين */
+}
+
+
+
+/* Night mode icon */
+.navbar .nav-list img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.navbar .nav-list img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+/* Hamburger navbar */
+
+
+
+
+/* Mobile Styles */
+
+
+/* Active state when hamburger clicked */
+.nav-list.active {
+  display: flex;
+}
+
+/* Social Links */
+.group-2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.group-2 .social-link img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s, opacity 0.3s;
+}
+
+.group-2 .social-link img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+/* Logo container to hold image + text */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  width: 30px;
+  height: auto;
+}
+
+.logo-text {
+  font-family: "Pacifico", cursive;
+  font-weight: 600;
+  font-size: 18px;
+
+}
+
+/* For smaller Screens */
+/* =========================
+   Responsive Header
+   ========================= */
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .box {
+    height: auto; /* يدي مرونة للهيدر */
+  }
+
+  .box .group {
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 0;
+  }
+
+  /* Hide nav by default on mobile */
+  .navbar .nav-list {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    background: #fff;
+    padding: 15px 20px;
+    display: none;
+    border-top: 1px solid #ddd;
+  }
+
+  /* Dark mode background */
+  body.dark-mode .navbar .nav-list {
+    background: #111827;
+    border-color: #333;
+  }
+
+  /* When active (menu opened) */
+  .navbar .nav-list.active {
+    display: flex;
+  }
+
+  /* Hamburger icon */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    width: 28px;
+    height: 22px;
+    position: relative;
+  }
+
+  .hamburger span {
+    background: #111827;
+    display: block;
+    height: 3px;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  body.dark-mode .hamburger span {
+    background: #fff;
+  }
+
+  /* Animate hamburger to X when active */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}

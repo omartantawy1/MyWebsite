@@ -1,0 +1,108 @@
+/* =========================
+   Projects Section
+   ========================= */
+.projects-section {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.projects-section p.subheading {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  position: relative;
+  background: #222;
+  border-radius: 12px;
+  width: 320px;
+  overflow: hidden;
+  z-index: 1;
+
+  /* 🔥 Gradient border fix */
+  border: 4px solid transparent;
+  background-image: linear-gradient(#222, #222),
+    linear-gradient(90deg, #4a90e2, yellow, purple, #111827);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-size: 200% 200%;
+  animation: borderFlow 5s linear infinite;
+}
+
+@keyframes borderFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/* لو عايز أنيميشين للجراديانت */
+
+.project-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.project-content {
+  padding: 1rem 1.25rem;
+  flex-grow: 1;
+}
+
+.project-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.project-description {
+  font-size: 0.9rem;
+  color: #bbb;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.project-tech {
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.project-links a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  text-decoration: none;
+}
+
+.project-links a:hover,
+.project-links a:focus {
+  color: #6f6eff;
+}
+
+@media (max-width: 350px) {
+  .project-card {
+    width: 100%;
+  }
+}
