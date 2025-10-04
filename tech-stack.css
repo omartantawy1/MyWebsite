@@ -92,3 +92,66 @@
 @media (min-width: 1024px) {
   .tech-grid { grid-template-columns: repeat(6, 1fr); }
 }
+
+
+
+
+/* =========================
+   Tech Grid Responsiveness
+========================= */
+
+/* الموبايل الصغير جدًا (لغاية 480px) → صفين = صورتين */
+@media (max-width: 480px) {
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr); /* صورتين جنب بعض */
+    gap: 15px;
+  }
+
+  .tech-item img {
+    width: 60px;   /* تصغير الصور */
+    height: 60px;
+  }
+
+  .tech-container {
+    padding: 15px;   /* الكارد نفسه يصغر */
+  }
+}
+
+/* الموبايل المتوسط (481px لغاية 768px) → ممكن 3 صور */
+@media (min-width: 481px) and (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .tech-item img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* التابلت (769px لغاية 1023px) → 4 صور */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .tech-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+
+  .tech-item img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+/* الديسكتوب (1024px فأكثر) → 6 صور زي ما عندك */
+@media (min-width: 1024px) {
+  .tech-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+  }
+
+  .tech-item img {
+    width: 80px;
+    height: 80px;
+  }
+}

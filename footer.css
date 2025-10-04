@@ -270,3 +270,50 @@ footer.animate {
 .container.active .toggle-right {
   transform: translateX(200%);
 }
+
+
+
+/* new adjustment */
+/* =========================
+   Mobile Specific Adjustments
+   ========================= */
+@media (max-width: 767px) {
+  /* Hide the left contact form (Contact Me) */
+  .contact-left {
+    display: none;
+  }
+
+  /* Show only the right contact form (Get in Touch) */
+  .contact-right {
+    position: relative;
+    width: 100%;
+    opacity: 1;
+    z-index: 2;
+    transform: none;
+  }
+
+  /* Hide the toggle entirely on mobile */
+  .toggle-container {
+    display: none;
+  }
+
+  /* Stack content vertically */
+  .container {
+    flex-direction: column;
+    width: 95%;
+    min-height: auto;
+    border-radius: 20px;
+    padding: 20px 10px;
+    
+  }
+
+  .container form {
+    padding: 20px;
+  }
+
+  .footer-header {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
